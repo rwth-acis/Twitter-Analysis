@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [storm.starter.bolt.TweetUpdateBoltTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="storm.starter.bolt.TweetUpdateBoltTest">
+        <methods>
+          <include name="illegalDBParametersShouldThrowException" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- storm.starter.bolt.TweetUpdateBoltTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [storm.starter.bolt.TweetUpdateBoltTest] -->

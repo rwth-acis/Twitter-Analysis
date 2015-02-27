@@ -1,0 +1,77 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+twitter-analysis
+
+
+From: 'an unknown organization'
+  - MAchine Learning for LanguagE Toolkit (MALLET) (http://mallet.cs.umass.edu/) cc.mallet:mallet:jar:2.0.7-RC2
+    License: Common Public License Version 1.0  (http://www.eclipse.org/legal/cpl-v10.html)
+  - Guava: Google Core Libraries for Java (http://code.google.com/p/guava-libraries/guava) com.google.guava:guava:bundle:16.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Matrix Toolkits for Java (http://code.google.com/p/matrix-toolkits-java/) com.googlecode.matrix-toolkits-java:mtj:jar:0.9.14
+    License: GNU Lesser General Public License  (http://www.gnu.org/licenses/lgpl.html)
+  - Netlib for Java (http://code.google.com/p/netlib-java/) com.googlecode.netlib-java:netlib-java:jar:0.9.3
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+  - Codec  commons-codec:commons-codec:jar:1.2
+
+  - JGraphT (http://jgrapht.sourceforge.net) jgrapht:jgrapht:jar:0.6.0
+    License: GNU Lesser General Public License Version 2.1, February 1999  (http://jgrapht.sourceforge.net/LGPL.html)
+  - Java WordNet Library (http://jwordnet.sf.net) net.sf.jwordnet:jwnl:jar:1.4_rc3
+    License: BSD 3-Clause License  (http://jwordnet.svn.sourceforge.net/svnroot/jwordnet/trunk/jwnl/license.txt)
+  - GNU Trove (http://trove4j.sf.net) net.sf.trove4j:trove4j:jar:2.0.2
+    License: GNU Lesser General Public License 2.1  (http://www.gnu.org/licenses/lgpl-2.1.txt)
+  - Fortran to Java ARPACK (http://f2j.sourceforge.net) net.sourceforge.f2j:arpack_combined_all:jar:0.1
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+  - JDOM (http://www.jdom.org/) org.jdom:jdom:jar:1.1
+
+  - MongoDB Java Driver (http://www.mongodb.org) org.mongodb:mongo-java-driver:jar:3.0.0-SNAPSHOT
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - twitter4j-core (http://twitter4j.org/) org.twitter4j:twitter4j-core:jar:4.0.2
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - twitter4j-stream (http://twitter4j.org/) org.twitter4j:twitter4j-stream:jar:4.0.2
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'Apache Software Foundation' (http://jakarta.apache.org/)
+  - HttpClient (http://jakarta.apache.org/httpcomponents/httpclient-3.x/) commons-httpclient:commons-httpclient:jar:3.1
+    License: Apache License  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'http://www.beanshell.org/'
+  - BeanShell  org.beanshell:bsh:jar:2.0b4
+    License: GNU LESSER GENERAL PUBLIC LICENSE  (http://www.gnu.org/licenses/lgpl.txt)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.6
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Logging (http://jakarta.apache.org/commons/logging/) commons-logging:commons-logging:jar:1.0.4
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons Collections (http://commons.apache.org/collections/) commons-collections:commons-collections:jar:3.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - HttpClient (http://hc.apache.org/httpcomponents-client) org.apache.httpcomponents:httpclient:jar:4.1.3
+    License: Apache License  (LICENSE.txt)
+  - HttpCore (http://hc.apache.org/httpcomponents-core-ga) org.apache.httpcomponents:httpcore:jar:4.1.4
+    License: Apache License  (LICENSE.txt)
+  - HttpMime (http://hc.apache.org/httpcomponents-client) org.apache.httpcomponents:httpmime:jar:4.1.3
+    License: Apache License  (LICENSE.txt)
+
+From: 'The Netty Project' (http://netty.io/)
+  - Netty/Buffer (http://netty.io/netty-buffer/) io.netty:netty-buffer:jar:4.0.24.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Codec (http://netty.io/netty-codec/) io.netty:netty-codec:jar:4.0.24.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Common (http://netty.io/netty-common/) io.netty:netty-common:jar:4.0.24.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Handler (http://netty.io/netty-handler/) io.netty:netty-handler:jar:4.0.24.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Transport (http://netty.io/netty-transport/) io.netty:netty-transport:jar:4.0.24.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+
+
+

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest">
+              <span class="suite-name border-passed">storm.twitter.bolt.FrameworkTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-storm.twitter.bolt.FrameworkTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-storm.twitter.bolt.FrameworkTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-storm.twitter.bolt.FrameworkTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-storm.twitter.bolt.FrameworkTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-storm.twitter.bolt.FrameworkTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-storm.twitter.bolt.FrameworkTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-storm.twitter.bolt.FrameworkTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-storm.twitter.bolt.FrameworkTest" class="hide-methods passed suite-storm.twitter.bolt.FrameworkTest"> (hide)</a> <!-- hide-methods passed suite-storm.twitter.bolt.FrameworkTest -->
+                      <a href="#" panel-name="suite-storm.twitter.bolt.FrameworkTest" class="show-methods passed suite-storm.twitter.bolt.FrameworkTest"> (show)</a> <!-- show-methods passed suite-storm.twitter.bolt.FrameworkTest -->
+                    </span>
+                    <div class="method-list-content passed suite-storm.twitter.bolt.FrameworkTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestA_DBConnectionOK">TestA_DBConnectionOK</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestB_illegalTupleInput(illegal input)">TestB_illegalTupleInput(illegal input)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestB_illegalTupleInput()">TestB_illegalTupleInput()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestC_EmitNewTweet">TestC_EmitNewTweet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestD_UpdateOldTweet">TestD_UpdateOldTweet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestDeclareOutputFields_AnalysisBolt">TestDeclareOutputFields_AnalysisBolt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestDeclareOutputFields_MongoSaveBolt">TestDeclareOutputFields_MongoSaveBolt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestDeclareOutputFields_TweetUpdateBolt">TestDeclareOutputFields_TweetUpdateBolt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestE_prepareAnalysisBolt">TestE_prepareAnalysisBolt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestF_extractSentiment(amazing)">TestF_extractSentiment(amazing)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestF_extractSentiment(strike)">TestF_extractSentiment(strike)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestF_extractSentiment(nervous)">TestF_extractSentiment(nervous)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestF_extractSentiment()">TestF_extractSentiment()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestF_extractSentiment(door)">TestF_extractSentiment(door)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestF_extractSentiment(good)">TestF_extractSentiment(good)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestG_EmitNewTweet">TestG_EmitNewTweet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestG_illegalTupleInput()">TestG_illegalTupleInput()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestG_illegalTupleInput(illegal input)">TestG_illegalTupleInput(illegal input)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestH_illegalTupleInput()">TestH_illegalTupleInput()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestH_illegalTupleInput(illegal input)">TestH_illegalTupleInput(illegal input)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestI_AnalyseAndSave">TestI_AnalyseAndSave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestK">TestK</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-storm.twitter.bolt.FrameworkTest" title="storm.twitter.bolt.FrameworkTest" hash-for-method="TestZ_DropDB">TestZ_DropDB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-storm.twitter.bolt.FrameworkTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-storm.twitter.bolt.FrameworkTest" class="panel storm.twitter.bolt.FrameworkTest">
+          <div class="suite-storm.twitter.bolt.FrameworkTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">storm.twitter.bolt.FrameworkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestA_DBConnectionOK">
+                  </a> <!-- TestA_DBConnectionOK -->
+                  <span class="method-name">TestA_DBConnectionOK</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestB_illegalTupleInput(illegal input)">
+                  </a> <!-- TestB_illegalTupleInput(illegal input) -->
+                  <span class="method-name">TestB_illegalTupleInput</span>
+                  <span class="parameters">(illegal input)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestB_illegalTupleInput()">
+                  </a> <!-- TestB_illegalTupleInput() -->
+                  <span class="method-name">TestB_illegalTupleInput</span>
+                  <span class="parameters">()</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestC_EmitNewTweet">
+                  </a> <!-- TestC_EmitNewTweet -->
+                  <span class="method-name">TestC_EmitNewTweet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestD_UpdateOldTweet">
+                  </a> <!-- TestD_UpdateOldTweet -->
+                  <span class="method-name">TestD_UpdateOldTweet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestDeclareOutputFields_AnalysisBolt">
+                  </a> <!-- TestDeclareOutputFields_AnalysisBolt -->
+                  <span class="method-name">TestDeclareOutputFields_AnalysisBolt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestDeclareOutputFields_MongoSaveBolt">
+                  </a> <!-- TestDeclareOutputFields_MongoSaveBolt -->
+                  <span class="method-name">TestDeclareOutputFields_MongoSaveBolt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestDeclareOutputFields_TweetUpdateBolt">
+                  </a> <!-- TestDeclareOutputFields_TweetUpdateBolt -->
+                  <span class="method-name">TestDeclareOutputFields_TweetUpdateBolt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestE_prepareAnalysisBolt">
+                  </a> <!-- TestE_prepareAnalysisBolt -->
+                  <span class="method-name">TestE_prepareAnalysisBolt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestF_extractSentiment(amazing)">
+                  </a> <!-- TestF_extractSentiment(amazing) -->
+                  <span class="method-name">TestF_extractSentiment</span>
+                  <span class="parameters">(amazing)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestF_extractSentiment(strike)">
+                  </a> <!-- TestF_extractSentiment(strike) -->
+                  <span class="method-name">TestF_extractSentiment</span>
+                  <span class="parameters">(strike)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestF_extractSentiment(nervous)">
+                  </a> <!-- TestF_extractSentiment(nervous) -->
+                  <span class="method-name">TestF_extractSentiment</span>
+                  <span class="parameters">(nervous)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestF_extractSentiment()">
+                  </a> <!-- TestF_extractSentiment() -->
+                  <span class="method-name">TestF_extractSentiment</span>
+                  <span class="parameters">()</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestF_extractSentiment(door)">
+                  </a> <!-- TestF_extractSentiment(door) -->
+                  <span class="method-name">TestF_extractSentiment</span>
+                  <span class="parameters">(door)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestF_extractSentiment(good)">
+                  </a> <!-- TestF_extractSentiment(good) -->
+                  <span class="method-name">TestF_extractSentiment</span>
+                  <span class="parameters">(good)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestG_EmitNewTweet">
+                  </a> <!-- TestG_EmitNewTweet -->
+                  <span class="method-name">TestG_EmitNewTweet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestG_illegalTupleInput()">
+                  </a> <!-- TestG_illegalTupleInput() -->
+                  <span class="method-name">TestG_illegalTupleInput</span>
+                  <span class="parameters">()</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestG_illegalTupleInput(illegal input)">
+                  </a> <!-- TestG_illegalTupleInput(illegal input) -->
+                  <span class="method-name">TestG_illegalTupleInput</span>
+                  <span class="parameters">(illegal input)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestH_illegalTupleInput()">
+                  </a> <!-- TestH_illegalTupleInput() -->
+                  <span class="method-name">TestH_illegalTupleInput</span>
+                  <span class="parameters">()</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestH_illegalTupleInput(illegal input)">
+                  </a> <!-- TestH_illegalTupleInput(illegal input) -->
+                  <span class="method-name">TestH_illegalTupleInput</span>
+                  <span class="parameters">(illegal input)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestI_AnalyseAndSave">
+                  </a> <!-- TestI_AnalyseAndSave -->
+                  <span class="method-name">TestI_AnalyseAndSave</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestK">
+                  </a> <!-- TestK -->
+                  <span class="method-name">TestK</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestZ_DropDB">
+                  </a> <!-- TestZ_DropDB -->
+                  <span class="method-name">TestZ_DropDB</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-storm.twitter.bolt.FrameworkTest-class-passed -->
+        </div> <!-- panel storm.twitter.bolt.FrameworkTest -->
+        <div panel-name="test-xml-storm.twitter.bolt.FrameworkTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;storm.twitter.bolt.FrameworkTest&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;storm.twitter.bolt.FrameworkTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- storm.twitter.bolt.FrameworkTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-storm.twitter.bolt.FrameworkTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for storm.twitter.bolt.FrameworkTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-storm.twitter.bolt.FrameworkTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for storm.twitter.bolt.FrameworkTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-storm.twitter.bolt.FrameworkTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for storm.twitter.bolt.FrameworkTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_storm.twitter.bolt.FrameworkTest');
+function tableData_storm.twitter.bolt.FrameworkTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestE_prepareAnalysisBolt')
+data.setCell(0, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(0, 3, 4713);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestF_extractSentiment')
+data.setCell(1, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(1, 3, 3759);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestF_extractSentiment')
+data.setCell(2, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(2, 3, 3413);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestF_extractSentiment')
+data.setCell(3, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(3, 3, 3264);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestG_illegalTupleInput')
+data.setCell(4, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(4, 3, 2959);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TestA_DBConnectionOK')
+data.setCell(5, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(5, 3, 2949);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TestG_EmitNewTweet')
+data.setCell(6, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(6, 3, 2730);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TestF_extractSentiment')
+data.setCell(7, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(7, 3, 2701);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TestK')
+data.setCell(8, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(8, 3, 2587);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TestF_extractSentiment')
+data.setCell(9, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(9, 3, 2438);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TestF_extractSentiment')
+data.setCell(10, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(10, 3, 2339);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TestG_illegalTupleInput')
+data.setCell(11, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(11, 3, 2284);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TestB_illegalTupleInput')
+data.setCell(12, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(12, 3, 937);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TestI_AnalyseAndSave')
+data.setCell(13, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(13, 3, 433);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TestC_EmitNewTweet')
+data.setCell(14, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(14, 3, 230);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TestD_UpdateOldTweet')
+data.setCell(15, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(15, 3, 136);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TestDeclareOutputFields_AnalysisBolt')
+data.setCell(16, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(16, 3, 83);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TestB_illegalTupleInput')
+data.setCell(17, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(17, 3, 56);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TestZ_DropDB')
+data.setCell(18, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(18, 3, 43);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TestH_illegalTupleInput')
+data.setCell(19, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(19, 3, 38);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TestH_illegalTupleInput')
+data.setCell(20, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(20, 3, 22);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TestDeclareOutputFields_MongoSaveBolt')
+data.setCell(21, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(21, 3, 16);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TestDeclareOutputFields_TweetUpdateBolt')
+data.setCell(22, 2, 'storm.twitter.bolt.FrameworkTest')
+data.setCell(22, 3, 13);
+window.suiteTableData['storm.twitter.bolt.FrameworkTest']= { tableData: data, tableDiv: 'times-div-storm.twitter.bolt.FrameworkTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <div id="times-div-storm.twitter.bolt.FrameworkTest">
+              </div> <!-- times-div-storm.twitter.bolt.FrameworkTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-storm.twitter.bolt.FrameworkTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for storm.twitter.bolt.FrameworkTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-storm.twitter.bolt.FrameworkTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-storm.twitter.bolt.FrameworkTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">storm.twitter.bolt.FrameworkTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestA_DBConnectionOK</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestB_illegalTupleInput()</span>
+                <span class="method-start">2981 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestB_illegalTupleInput(illegal input)</span>
+                <span class="method-start">3920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestC_EmitNewTweet</span>
+                <span class="method-start">3992 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestD_UpdateOldTweet</span>
+                <span class="method-start">4226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestDeclareOutputFields_AnalysisBolt</span>
+                <span class="method-start">4381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestDeclareOutputFields_MongoSaveBolt</span>
+                <span class="method-start">4479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestDeclareOutputFields_TweetUpdateBolt</span>
+                <span class="method-start">4503 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestE_prepareAnalysisBolt</span>
+                <span class="method-start">4526 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestF_extractSentiment()</span>
+                <span class="method-start">9243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestF_extractSentiment(good)</span>
+                <span class="method-start">13002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestF_extractSentiment(amazing)</span>
+                <span class="method-start">15342 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestF_extractSentiment(door)</span>
+                <span class="method-start">18607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestF_extractSentiment(strike)</span>
+                <span class="method-start">22021 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestF_extractSentiment(nervous)</span>
+                <span class="method-start">24459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestG_EmitNewTweet</span>
+                <span class="method-start">27161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestG_illegalTupleInput()</span>
+                <span class="method-start">29909 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestG_illegalTupleInput(illegal input)</span>
+                <span class="method-start">32868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestH_illegalTupleInput()</span>
+                <span class="method-start">35161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestH_illegalTupleInput(illegal input)</span>
+                <span class="method-start">35187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestI_AnalyseAndSave</span>
+                <span class="method-start">35404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestK</span>
+                <span class="method-start">35839 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestZ_DropDB</span>
+                <span class="method-start">38429 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

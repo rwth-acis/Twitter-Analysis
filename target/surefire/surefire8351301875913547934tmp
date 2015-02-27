@@ -1,0 +1,5 @@
+#surefire
+#Mon Nov 17 09:42:19 CET 2014
+user.dir=/home/achueva/incubator-storm/examples/TwitterCounter
+localRepository=/home/achueva/.m2/repository
+basedir=/home/achueva/incubator-storm/examples/TwitterCounter

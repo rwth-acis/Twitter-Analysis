@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [storm.starter.bolt.FrameworkTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="storm.starter.bolt.FrameworkTest">
+        <methods>
+          <include name="TestC_EmitNewTweet"/>
+          <include name="TestI_AnalyseAndSave"/>
+          <include name="TestK"/>
+          <include name="TestD_UpdateOldTweet"/>
+        </methods>
+      </class> <!-- storm.starter.bolt.FrameworkTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [storm.starter.bolt.FrameworkTest] -->

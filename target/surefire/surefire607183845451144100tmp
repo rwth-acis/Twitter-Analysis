@@ -1,0 +1,5 @@
+#surefire
+#Mon Sep 08 10:22:50 CEST 2014
+user.dir=/home/achueva/TwitterCounter
+localRepository=/home/achueva/.m2/repository
+basedir=/home/achueva/TwitterCounter
