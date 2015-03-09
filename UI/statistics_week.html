@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Twitter Analysis</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/statistics_week.css" />
+		<script src="js/globals.js"></script>
+		<script src="js/modernizr.custom.js"></script>		
+		<script type='text/javascript' src='js/jquery-1.9.1.js'></script>
+		<script src="js/statistics_week.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+		<script src="js/d3.tip.v0.6.3.js"></script>
+		<script src="js/d3.legend.js"></script>		
+		
+	</head>
+	<body>
+	
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><a class="gn-icon gn-icon-home" href="index.html">Home</a></li>
+								<li style="background: #BED2E8;"><a class="gn-icon gn-icon-weekly" href="statistics_day.html">Statistics</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-historical" href="statistics_his.html">Historical</a></li>
+										<li style="background: #BED2E8;"><a class="gn-icon gn-icon-weekly" href="statistics_week.html">Weekly</a></li>
+										<li><a class="gn-icon gn-icon-daily" href="statistics_day.html">Daily</a></li>
+									</ul></li>
+								<li><a class="gn-icon gn-icon-audience" href="audience.html">Audience</a></li>
+								<li><a class="gn-icon gn-icon-media" href="media.html">Media</a></li>
+								<li><a class="gn-icon gn-icon-topics" href="topics.html">Trending Topics</a></li>
+								<li><a class="gn-icon gn-icon-project" href="project.html">About the project</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				
+				<script>
+					header = document.createElement('p');
+					header.textContent = window.eventName + ': statistics';
+					header.className = "gn-header";
+					document.getElementById("gn-menu").appendChild(header);					
+				</script>
+			</ul>
+			
+		</div>
+		
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+		
+		<div id="SentimentDiv" class="statsDiv" style="margin-left: 80px; margin-top:80px;">
+			<p class="subHeader">Sentiment</p>
+			<p id="sentiment_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+		</div>
+		<div id="TweetsDiv" class="statsDiv" style="margin-top:80px;">
+			<p class="subHeader">Tweets, Retweets, Favorites</p>
+			<p id="tweets_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+		</div>
+		<div id="NutritionDiv" class="statsDiv" style="margin-left: 80px;">
+			<p class="subHeader">Nutrition</p>
+			<p id="nutrition_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+		</div>
+		<div id="EnergyDiv" class="statsDiv">
+			<p class="subHeader">Energy</p>
+			<p id="energy_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+		</div>
+		<div id="messageToolTipDiv" class="tooltip"></div>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+.statsDiv {
+    position:relative;
+    float:left;
+    display: white;
+    z-index: 1;
+    background-color:#FFFFFF;
+    padding:3px 5px 3px 5px;
+    color:black;
+    font-size:14px;
+    font-family:arial;
+    vertical-align: middle;
+    text-align: left;
+    margin-bottom:20px;
+    margin-right:20px;
+}
+
+.label {
+    color:#F8F8FF;
+    text-shadow: black 1px 0px, black 1px 1px, black 0px 1px, black -1px 1px, black -1px 0px, black -1px -1px, black 0px -1px, black 1px -1px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px;
+    font-size:20px;
+    z-index: 1000;
+    font-family:arial;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.subHeader {
+    color: #265380;
+    font-size:24px;
+    vertical-align: bottom;
+    text-align: center;
+    font-family: Lucida Grande;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.highlighted {
+    background: #5f6f81 !important;
+    color: white;
+}
+
+.info {
+    color: #265380;
+    font-size:18px;
+    vertical-align: bottom;
+    text-align: center;
+    font-family: Lucida Grande;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+table { 
+  width: 100%;
+  font-size:16px;
+  font-family: Lucida Grande;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #DAE4ED;
+}
+
+td:nth-of-type(even) { 
+  text-align: center;
+}
+
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+
+tr:hover {
+    background-color: #ccc;
+}
+
+td, th { 
+  padding: 3px;
+  border: 1px solid #DAE4ED; 
+  text-align: left; 
+}
+
+td:hover {
+    cursor: pointer;
+    background-color: #A3B8CF !important;
+    
+}

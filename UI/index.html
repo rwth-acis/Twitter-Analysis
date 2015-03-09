@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="utf-8" http-equiv="encoding">  
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Twitter Analysis</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/globals.js"></script>		
+		<script src="js/modernizr.custom.js"></script>		
+		<script type='text/javascript' src='js/jquery-1.9.1.js'></script>
+		<script src="js/index.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+		<script src="js/d3.tip.v0.6.3.js"></script>
+		
+	</head>
+	<body>
+	
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li style="background: #BED2E8;"><a class="gn-icon gn-icon-home" href="index.html">Home</a></li>
+								<li><a class="gn-icon gn-icon-statistics" href="statistics_his.html">Statistics</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-historical" href="statistics_his.html">Historical</a></li>
+										<li><a class="gn-icon gn-icon-weekly" href="statistics_week.html">Weekly</a></li>
+										<li><a class="gn-icon gn-icon-daily" href="statistics_day.html">Daily</a></li>
+									</ul></li>
+								<li><a class="gn-icon gn-icon-audience" href="audience.html">Audience</a></li>
+								<li><a class="gn-icon gn-icon-media" href="media.html">Media</a></li>
+								<li><a class="gn-icon gn-icon-topics" href="topics.html">Trending Topics</a></li>
+								<li><a class="gn-icon gn-icon-project" href="project.html">About the project</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				
+				<script>
+					header = document.createElement('p');
+					header.textContent = window.eventName + ": Real-time view";
+					header.className = "gn-header";
+					document.getElementById("gn-menu").appendChild(header);				
+				</script>
+			</ul>
+			
+		</div><!-- /container -->
+		
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+		
+		<div id="NewTweetsDiv" class="statsDiv" style="float: left; border: 2px solid white; top:80px; margin-left:80px; overflow: auto; width:calc(33.3% - 47px); max-height: calc(100vh - 100px);">
+			<p class="subHeader"> Tweets </p>
+			<p id="newTweets_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+			<div id="tweetUpdate" class="statsDiv" onclick="showTweets()" style="display: none; border: 1px solid #52649C; margin-top:20px; margin-right:0px; background-color: #C5DAF0; overflow: auto; width:100%; height:30px;"></div>
+		</div>
+		
+		<div id="ContainerDiv" class="statsDiv" style="min-height: 200px; padding-top: 0px; background-color: transparent; text-align: left; margin-bottom: 20px; margin-top:80px; width:calc(33.3% - 47px); height: calc(100% - 100px);">
+			<div id="EnergyDiv" class="statsDiv" style="padding-top: 0px; background-color: transparent; width:100%;  height: calc(25% - 20px);">
+				<div id="Energy" class="statsDiv" style="margin-right: 20px; padding-top: 0px; margin-bottom: 0px; background-color: white; width:calc(50% - 10px); height: 100%;">
+					<p class="subHeader" style="margin-bottom: 0px;"> Energy  </p>
+					<p id="energy_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+					<p id="pEnergy" class="subHeader" > </p>
+				</div>
+				<div id="Tweets" class="statsDiv" style="margin-right: 0px; padding-top: 0px; margin-bottom: 0px; background-color: white; width:calc(50% - 10px); height: 100%;">
+					<p class="subHeader"  style="margin-bottom: 0px;"> Tweets  </p>
+					<p id="tweets_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+					<p id="pTweets" class="subHeader" >  </p>
+				</div>
+			</div>
+				
+				
+			<div id="SentimentDiv" class="statsDiv" style="width:100%; height: 50%; padding: 0px;">
+				<p id="pSentiment" class="subHeader" style="margin-bottom: 0px; padding:0px;"> Sentiment  </p>
+				<p id="sentiment_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+				<div id="SenPositive" class="statsDiv valuePositive" style="border: 1px solid #5f6f81; margin-left: 10px; margin-right: 10px; padding-top: 0px; background-color: white; width:calc(33% - 13px); height: calc(100% - 66px);">
+					<p class="sentimentHeader" style="color: green;"> Positive tweets </p>
+					<p id="pSenPositive" class="subHeader" style="margin: 2px;" > # </p>
+					<p class="senAvg" style="font-size:16px;">Avg: </p>
+					<p id="pSenPositiveAvg" class="subHeader" style="color: green;"> # </p>
+				</div>
+				<div id="SenNeutral" class="statsDiv value" style="border: 1px solid #5f6f81; margin-right: 10px; padding-top: 0px; background-color: white; width:calc(33% - 13px); height: calc(100% - 66px)">
+					<p class="sentimentHeader" > Neutral tweets </p>
+					<p id="pSenNeutral" class="subHeader" style="margin: 2px;" > # </p>
+					<p class="senAvg" style="font-size:16px;">Avg: </p>
+					<p id="pSenNeutralAvg" class="subHeader"> # </p>
+				</div>
+				<div id="SenNegative" class="statsDiv valueNegative" style="border: 1px solid #5f6f81; margin-right: 10px; padding-top: 0px; background-color: white; width:calc(33% - 13px); height: calc(100% - 66px)">
+					<p class="sentimentHeader" > Negative tweets </p>
+					<p id="pSenNegative" class="subHeader" style="margin: 2px;" > # </p>
+					<p class="senAvg" style="font-size:16px;">Avg: </p>
+					<p id="pSenNegativeAvg" class="subHeader" style="color: #B50000;" > # </p>
+				</div>
+				
+				
+			</div>
+			
+			<div id="StatTweetsDiv" class="statsDiv" style=" background-color: transparent; width:100%; height: calc(25% - 20px);">
+				<div id="Energy" class="statsDiv" style="margin-right: 20px; padding-top: 0px; background-color: white; width:calc(50% - 10px); height: 100%;">
+					<p class="subHeader"  style="margin-bottom: 0px;"> Retweets </p>
+					<p id="retweets_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: -10px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+					<p id="pRetweets" class="subHeader" > </p>
+				</div>
+				<div id="Energy" class="statsDiv" style="margin-right: 0px; padding-top: 0px; background-color: white; width:calc(50% - 10px); height: 100%;">
+					<p class="subHeader"  style="margin-bottom: 0px;"> Favorites </p>
+					<p id="favorites_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: -10px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+					<p id="pFavorites" class="subHeader" > </p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="NutritionGraphDiv" class = "nutrition statsDiv" style="float: right; border: 2px solid white; margin-top:80px; width:calc(33.3% - 47px);  height: calc(50vh - 60px);">
+			<p class="subHeader" style="margin-bottom: 0px;"> Nutrition now </p>
+			<p id="nutritionNow_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+		</div>
+		<div id="SentimentGraphDiv" class = "sentiment statsDiv" style="float: right; border: 2px solid white; margin-bottom:20px; width:calc(33.3% - 47px);  height: calc(50vh - 60px);">
+			<p class="subHeader" style="margin-bottom: 0px;"> Sentiment now</p>
+			<p id="sentimentNow_tip" onmouseover="showTip(this)" onmouseout="noTip()"; style="position: absolute; top: 4px; right: 0px; color: #2E73B8;" class = "gn-icon gn-icon-info"></p>
+		</div>		
+		<div id="messageToolTipDiv" class="tooltip"></div>
+		
+	</body>
+</html>

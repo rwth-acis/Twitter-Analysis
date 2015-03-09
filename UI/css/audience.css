@@ -1,0 +1,159 @@
+.statsDiv {
+    position:relative;
+    float:left;
+    display: white;
+    z-index: 1;
+    background-color:#FFFFFF;
+    padding:3px 5px 3px 5px;
+    color:black;
+    font-size:14px;
+    font-family:arial;
+    vertical-align: middle;
+    text-align: left;
+    margin-bottom:20px;
+    margin-right:20px;
+}
+
+.TipDiv {
+    position: absolute;
+    display: none;
+    border:2px solid black;
+    margin:auto;
+    padding:3px 5px 3px 5px;
+    color:white;
+    font-size:12px;
+    font-family:arial;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    min-width:50px;
+    overflow:hidden;
+}
+
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.link {
+    stroke: #999;
+    stroke-opacity: .6;
+}
+
+.classBig { 
+    text-indent: 40px;
+    letter-spacing: .4em;
+    width: 410px;
+    height: 100px;
+    padding: 30px;
+    margin: 10px;
+    font-size: 1.6em;
+}
+
+.classUserInfo {
+    color: #265380;
+    font-size:18px;
+    vertical-align: middle;
+    text-align: left;
+    font-family:Lucida Grande;
+}
+
+.subHeader {
+    color: #265380;
+    font-size:24px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+    margin-bottom: 0;
+}
+
+.classSmall {
+    position:absolute;
+    display:block;
+    z-index:10000;
+    border:2px solid black;
+    background-color:rgba(0,0,0,0.8);
+    margin:auto;
+    padding:3px 5px 3px 5px;
+    color:white;
+    font-size:12px;
+    font-family:arial;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    min-width:50px;
+    overflow:auto;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #51708F;
+}
+
+.bar:hover {
+  fill: #18C0CC ;
+}
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  z-index:1;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+table { 
+  width: 100%;
+  font-family: Lucida Grande;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #DAE4ED; 
+}
+
+td:nth-of-type(even) { 
+  text-align: center; 
+}
+
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+
+td, th { 
+  padding: 3px;
+  border: 1px solid #DAE4ED; 
+  text-align: left; 
+}

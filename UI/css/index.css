@@ -1,0 +1,154 @@
+.statsDiv {
+    position:relative;
+    float:left;
+    display: white;
+    z-index: 1;
+    background-color:#FFFFFF;
+    padding:3px 5px 3px 5px;
+    color:black;
+    font-size:14px;
+    font-family:arial;
+    vertical-align: middle;
+    text-align: left;
+    margin-bottom:20px;
+    margin-right:20px;
+}
+
+.label {
+    color:#F8F8FF;
+    text-shadow: black 1px 0px, black 1px 1px, black 0px 1px, black -1px 1px, black -1px 0px, black -1px -1px, black 0px -1px, black 1px -1px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px, black 0 0 3px;
+    font-size:20px;
+    z-index: 1000;
+    font-family:arial;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.TipDiv {
+    position: absolute;
+    display: none;
+    border:2px solid black;
+    margin:auto;
+    padding:3px 5px 3px 5px;
+    color:white;
+    font-size:12px;
+    font-family:arial;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    min-width:50px;
+    overflow:hidden;
+}
+
+.subHeader {
+    color: #265380;
+    font-size:24px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+    margin-top: 14px;
+}
+
+.sentimentHeader {
+    font-size:20px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+    margin-top: 14px;
+}
+
+.senAvg {
+    font-size:18px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+    margin-top: 14px;
+}
+
+.valuePositive {
+    color: #0B6E2F;
+    font-size:20px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+.valueNegative {
+    color: #B50000;
+    font-size:20px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+
+.value {
+    color: #003C78;
+    font-size:20px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+.newTweets {
+    color: #33447A;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+table { 
+  width: 100%;
+  max-height: 1000px;
+  font-family: Lucida Grande;
+  word-wrap:break-word;
+  table-layout: fixed;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+td:nth-of-type(even) { 
+  text-align: center; 
+}
+
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+
+td, th { 
+  padding: 6px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tweetStats {
+    color:#511799;
+    font-size:18px;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

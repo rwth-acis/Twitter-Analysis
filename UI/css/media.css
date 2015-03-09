@@ -1,0 +1,77 @@
+.statsDiv {
+    position:relative;
+    float:left;
+    display: white;
+    z-index: 1;
+    background-color:#FFFFFF;
+    padding:3px 5px 3px 5px;
+    color:black;
+    font-size:14px;
+    font-family:arial;
+    vertical-align: middle;
+    text-align: left;
+    margin-bottom:20px;
+    margin-right:20px;
+}
+
+.classUserInfo {
+    color: #265380;
+    font-size:18px;
+    vertical-align: middle;
+    text-align: left;
+    font-family:Lucida Grande;
+}
+
+.subHeader {
+    color: #265380;
+    font-size:24px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+}
+
+table { 
+  width: 100%;
+  
+  font-family: Lucida Grande;
+  word-wrap:break-word;
+  table-layout: fixed;
+  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Zebra striping */
+tr:nth-of-type(5n+1) { 
+  background: #C5DAF0; 
+}
+
+td:nth-of-type(even) { 
+  text-align: center; 
+}
+
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+
+td, th { 
+  padding: 6px;
+  /*border: 1px solid #DAE4ED; */
+  text-align: left;
+  font-size: 14px;
+}
+
+.tweetStats {
+    color:#511799;
+    font-size:18px;
+}
+
+.newTweets {
+    color: #33447A;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 0;
+    cursor: pointer;
+}

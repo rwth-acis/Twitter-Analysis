@@ -1,0 +1,46 @@
+.statsDiv {
+    position:relative;
+    float:left;
+    display: white;
+    z-index: 1;
+    background-color:#FFFFFF;
+    padding:3px 5px 3px 5px;
+    color:black;
+    font-size:14px;
+    font-family:arial;
+    vertical-align: middle;
+    text-align: left;
+    margin-bottom:20px;
+    margin-right:20px;
+    width:calc(50% - 60px);
+    height:480px;
+}
+
+.axis line {
+  stroke: #C2C2C2;
+}
+
+.axis path {
+  fill: none;
+  stroke: #C2C2C2;
+  opacity: 0.8;
+}
+
+.axis + .axis g text {
+  display: none;
+}
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.8;}
+
+.subHeader {
+    color: #265380;
+    font-size:24px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Lucida Grande;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
